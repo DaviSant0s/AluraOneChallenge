@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  color: #0A3871;
+
+  /* trilho */
+  ::-webkit-scrollbar{
+    background-color: #f1f1f1;
+    width: 5px;
+    border-radius: 50px 50px 50px 50px;
+  }
+  
+  /* scroll */
+  ::-webkit-scrollbar-thumb{
+    background-color: #c1c1c1;
+    border-radius: 500px;
+  }
+
+}
+
+
+body{
+  background-color: #F3F5FC;
+}
+
+.decodificador-container{
+  position: relative;
+  display: flex;
+  gap: 20px;
+  background-color: #F3F5FC;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.logo{
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  left: 40px;
+  width: fit-content;
+}
+
+/* entrada */
+.campo-digitar-texto-container{
+  
+ /*  background-color: red; */
+  width: 100%;
+  padding-left: 150px;
+  padding-top: 100px;
+}
+
+.campo-digitar-texto-content{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* background-color: yellow; */
+  width: 100%;
+  height: 100%;
+}
+
+.campo-digitar-texto-content > form{
+  width: 680px;
+  /* background-color: aqua; */
+  height: 100%;
+}
+
+.campo-digitar-texto-content > form > textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  background-color: transparent;
+  resize: none;
+}
+
+.campo-digitar-texto-content > form > textarea::placeholder{
+  color: #0A3871;
+  opacity: 0.9;
+}
+
+.icon-container {
+  display: flex;
+  gap: 10px;
+  height: 18px;
+  width: 680px;
+}
+
+.icon-container > p{
+  font-size: 12px;
+  color: #495057;
+}
+
+.btns-container {
+  display: flex;
+  gap: 24px;
+  /* background-color: #6c89ac; */
+  width: 680px;
+  height: 67px;
+}
+
+.btns-container > button {
+  appearance: none;
+  width: 328px;
+  height: 100%;
+  border-radius: 24px;
+  border: 1px solid #0A3871;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.btns-container > button:hover{
+  transform: scale(1.01);
+}
+
+.btns-container > .criptografar{
+  background-color: #0A3871;
+  color: white;
+}
+.btns-container > .descriptografar{
+  background-color: #D8DFE8;
+}
+
+
+
+
+/* saida */
+.campo-saida-texto-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+}
+
+.campo-saida-texto-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 32px;
+}
+
+.campo-saida-texto-content > img{
+  width: 250px;
+}
+
+.campo-saida-texto-content > .nenhuma-msg-exibida{
+  color: #343A40;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.campo-saida-texto-content > .digite-um-texto{
+  color: #343A40;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.copiar{
+  position: absolute;
+  bottom: 40px;
+
+  appearance: none;
+  width: 250px;
+  height: 55.69px;
+  border-radius: 24px;
+  border: 1px solid #0A3871;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+
+  display: none;
+}
+
+#copiar{
+  display: block;
+}

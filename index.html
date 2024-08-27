@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Decodificador de texto</title>
+</head>
+<body>
+  <div class="decodificador-container">
+    <div class="logo"><img src="images/logoAlura.png" alt=""></div>
+
+    <div class="campo-digitar-texto-container">
+      <div class="campo-digitar-texto-content">
+        <form id="form_digitar" action="" method="post">
+          <textarea name="campoDigitarTexto" id="id_campoDigitarTexto" placeholder="Digite seu texto"></textarea>
+        </form>
+        <div class="icon-container">
+          <img src="images/icone.png" alt="">
+          <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div class="btns-container">
+          <button class="criptografar">Criptografar</button>
+          <button class="descriptografar">Descriptografar</button>
+        </div>
+      </div>
+    </div>
+    <div class="campo-saida-texto-container">
+      <div class="campo-saida-texto-content">
+        <img src="images/lupa.png" alt="">
+        <h1 class="nenhuma-msg-exibida">Nenhuma mensagem encontrada</h1>
+        <p class="digite-um-texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+      </div>
+      <button class="copiar">Copiar</button>
+    </div>
+
+</div>
+</body>
+
+<script src="script.js"></script>
+</html>
